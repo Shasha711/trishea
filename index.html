@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trishea Portfolio</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #2c3e50;
+    background-color: wheat;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: rgb(224, 91, 43);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+
+.navbar a:hover {
+    color: wheat;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    background-image: url('3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-content {
+    max-width: 700px;
+}
+
+.home-content h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: rgb(224, 91, 43);
+}
+
+.home-content span {
+    color: rgb(224, 91, 43);
+}
+
+.home-content h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(224, 91, 43);
+}
+
+.home-content p {
+    color: #2c3e50;
+    text-align: left;
+    font-size: 16px;
+    margin: 20px 0 40px;
+}
+
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(224, 91, 43);
+    border: 2px solid rgb(224, 91, 43);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.btn-box a:hover::before {
+    background: rgb(224, 91, 43);
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(224, 91, 43);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(224, 91, 43);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.home-sci a:hover {
+    color: #ffffff;
+}
+
+.home-sci a:hover::before {
+    background: rgb(224, 91, 43);
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: wheat;
+    height: 50vh;
+}
+
+.about h1, .about p {
+    color: black;
+}
+
+.about-container {
+    width: 50%;
+}
+
+.about h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.services {
+    background-color: wheat;
+}
+
+.box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+}
+
+.box p, .box h3 {
+    color: black;
+}
+
+.card {
+    border: solid rgb(224, 91, 43);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.services h2 {
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
+
+.contact {
+    padding-top: 50px;
+    background-color: wheat;
+}
+
+.contactme h1 {
+    font-size: 40px;
+    color: rgb(224, 91, 43);
+}
+
+.contactme {
+    display: grid;
+    justify-content: center;
+}
+
+.info {
+    background: rgb(224, 91, 43);
+    padding: 20px;
+    border-radius: 15px;
+    color: #ffffff;
+}
+
+footer {
+    background: rgb(224, 91, 43);
+    color: #ffffff;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header class="header">
+        <a href="#" class="logo"></a>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Hi my name is<span><br>Trishea Bartolome</span></h1>
+            <h3><span class="multiple-text"></span></h3>
+            <p>I'm a computer science student.</p>
+            <div class="btn-box">
+                <a href="#contact">Contact Me</a>
+                <a href="#about">Check me</a>
+            </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-container">
+            <h1>About me!</h1><br>
+            <p>WEB DEVELOPER & DESIGNER As a student of computer science, I'm passionate about applying logic and coding to difficult problems.
+                 I enjoy learning new things constantly, adjusting to new technologies, and collaborating with colleagues to come up with innovative solutions in the fast-paced field of computer science. Additionally,
+                  I am capable of creating and implementing my own point-of-sale (POS) system and tailoring it to meet specific needs and preferences of my organization.</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <center>
+            <h2>My Skills</h2>
+        </center>
+        <div class="box">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h1 class="card-title">WEBSITE DEVELOPMENT</h1>
+                    <p class="card-text">Every website should be designed with two main objectives in mind: first, it must function on all devices. Second, it must happen as quickly as feasible.</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h1 class="card-title">WEBSITE DESIGNER</h1>
+                    <p class="card-text">A web designer is responsible for creating and updating the layout and visual design of websites or online pages, focusing on aesthetics and user experience. In contrast, a web developer specializes in coding and implementing the functionality that makes the website operate effectively.
+                    </p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h1 class="card-title">WEBSITE ANIMATION </h1>
+                    <p class="card-text">The main types of web animation include SVG, SMIL, GIF, canvas, video, and JavaScript. Each type is best suited for specific purposes; for example, CSS animations and transitions are ideal for basic user interface elements and transitions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="contactme">
+            <center>
+                <h1>Contact me here</h1><br />
+            </center>
+            <div class="info">
+                <p><i class='bx bx-user'></i> Trishea Bartolome</p>
+                <p><i class='bx bx-envelope'></i> trishbartolome@gmail.com</p>
+                <p><i class='bx bx-phone-call'></i> 09275214486</p>
+            </div>
+        </div>
+    </section>
+    <footer style="background: rgb(224, 91, 43); color: #ffffff;"> <center>@This is my Portfolio Trish</center> </footer>
+</body>
+</html>
